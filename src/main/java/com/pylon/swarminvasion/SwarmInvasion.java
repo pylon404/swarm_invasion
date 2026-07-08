@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.pylon.swarminvasion;
 
 import org.slf4j.Logger;
 
@@ -32,10 +32,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(ExampleMod.MODID)
-public class ExampleMod {
+@Mod(SwarmInvasion.MODID)
+public class SwarmInvasion {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "examplemod";
+    public static final String MODID = "pylonswarminvasion";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
@@ -65,7 +65,7 @@ public class ExampleMod {
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
+    public SwarmInvasion(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -90,7 +90,7 @@ public class ExampleMod {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
+        LOGGER.info("Swarm Invasion in commonSetup method");
 
         if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
             LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
@@ -112,6 +112,6 @@ public class ExampleMod {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        LOGGER.info("Swarm Invasion in onServerStarting method");
     }
 }
