@@ -1,0 +1,13 @@
+{
+  "itemGroup.pylonswarminvasion": "Swarm Invasion Tab",
+  "block.pylonswarminvasion.example_block": "Example Block",
+  "item.pylonswarminvasion.example_item": "Example Item",
+
+  "pylonswarminvasion.configuration.title": "Swarm Invasion Configs",
+  "pylonswarminvasion.configuration.section.pylonswarminvasion.common.toml": "Swarm Invasion Configs",
+  "pylonswarminvasion.configuration.section.pylonswarminvasion.common.toml.title": "Swarm Invasion Configs",
+  "pylonswarminvasion.configuration.items": "Item List",
+  "pylonswarminvasion.configuration.logDirtBlock": "Log Dirt Block",
+  "pylonswarminvasion.configuration.magicNumberIntroduction": "Magic Number Text",
+  "pylonswarminvasion.configuration.magicNumber": "Magic Number"
+}
