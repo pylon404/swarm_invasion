@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"idle": {
+		"misc.idle": {
 			"loop": true,
 			"animation_length": 4,
 			"bones": {
@@ -117,7 +117,7 @@
 				}
 			}
 		},
-		"attack": {
+		"attack.strike": {
 			"animation_length": 0.25,
 			"bones": {
 				"right_backleg": {
@@ -278,7 +278,7 @@
 				}
 			}
 		},
-		"walk": {
+		"move.walk": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
